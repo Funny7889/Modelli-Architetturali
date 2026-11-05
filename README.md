@@ -1,2 +1,2 @@
 # Modelli-Architetturali
-Sito sui modelli architetturali dei sistemi distribuiti
+Per usare questo progetto, scaricalo su VS Code
