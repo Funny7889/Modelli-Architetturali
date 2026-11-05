@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelli architeturali</title>
+</head>
+<body>
+
+    <!-- Intestazione: uguale in tutte le pagine-->
+    <header>
+        <h1>Cluster e Grid Computing</h1>
+        <p>Autore: Marco Funiati</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classificazioneFlynn.html">Classificazione di Flynn</a></li>
+            <li><a href="sistemiPervasivi.html">Sistemi Pervasivi</a></li>
+            <li><a href="architetturaSoftware.html">Architettura Software</a></li>
+            <li><a href="middleware.html">Middleware</a></li>
+        </ul>
+    </nav>
+
+
+<hr>
+
+
+<!-- contenuto da fare voi-->
+<main>
+
+  <!--2. Titolo argomento -->
+    <h2>Cluster computing e Grid computig</h2>
+
+    <!--3. Presentazione dell'argomento -->
+    <section>
+        <h3>Che cos'è il Cluster computing</h3>
+        <p>Il <strong>cluster computing</strong> è un sistema distribuito costituito da nodi ad alte prestazioni interconessi tramite una rete locale ad alta velocità.</p>
+        <h3>Che cos'è il Grid computing</h3>
+        <p>Il <strong>grid computing</strong> è un sistema distribuito di calcolo altamente decentralizzato, composto da mlti nodi disposti a griglia</p>
+    </section>
+
+    <!--4. Elenco delle caratteristiche principali -->
+    <section>
+        <h3>Caratteristiche principali</h3>
+        <ul>
+            <li><strong>Nodi del Cluster:</strong> Sono omogenei, ovvero condividono lo stesso sistema operativo, hardware molto simile e la stessa rete</li>
+            <li><strong>Nodi del Grid:</strong> Sono altamente eterogenei per hardware, software, tecnologia di rete e politiche di sicurezza.</li>
+            <li><strong>Organizzazione del Cluster:</strong> È fisicamente centralizzata (es. PC sullo stesso rack) con un'applicazione di gestione su un singolo PC.</li>
+            <li><strong>Organizzazione del Grid:</strong> Prevede la condivisione coordinata di risorse all'interno di una Virtual Organizatio multi-istituzionale.</li>
+        </ul>
+    </section>
+
+<!--5. Tabella riassuntiva -->
+    <section>
+        <h3>Schema riepilogativo</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Caratteristica</th>
+                    <th>Cluster computing</th>
+                    <th>Grid computing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Definizione</strong></td>
+                    <td>Sistema distribuito costituito da nodi ad alte prestazioni interconnessi tramite rete locale ad alta velocità.</td>
+                    <td>Sistema distribuito di calcolo altamente decentralizzato, composto da molti nodi disposti a griglia.</td>
+                </tr>
+                <tr>
+                    <td><strong>Nodi</strong></td>
+                    <td>Omogenei: stesso sistema operativo, hardware molto simile, stessa rete.</td>
+                    <td>Altamente eterogenei: hardware, software, tecnologia di rete, politiche di sicurezza.</td>
+                </tr>
+                <tr>
+                    <td><strong>Organizzazione</strong></td>
+                    <td>Fisicamente centralizzata (PC sullo stesso rack) con applicazione di management su un singolo PC. Due modelli: gerarchico con nodo principale (Beowulf, MPI) o Single System Image (MOSIX, bilanciamento automatico con migrazione dei processi).</td>
+                    <td>Condivisione coordinata di risorse (non solo file, anche accesso diretto ai computer) all'interno di una Virtual Organization multi- istituzionale. Evoluzione service-oriented: OGSA, risorse come grid services.</td>
+                </tr>
+                <tr>
+                    <td><strong>Esempio</strong></td>
+                    <td>Cluster di 4 PC: ricerca dei numeri primi da 35 a 14 secondi; prodotto di matrici 700x700 da 3 a 1 secondo (esempio del libro).</td>
+                    <td>Progetti scientifici o industriali che mettono in comune risorse di calcolo e di storage di istituzioni diverse.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<!--6. Esempio reale a scelta -->
+    <section>
+        <h3>Un esempio reale</h3>
+        <p>un esempio di <strong>cluster computing</strong> è un sistema da 4 PC utilizzato per eseguire calcoli molto onerosi, come la ricerca di numeri primi o il prodotto di matrici 700x700, riducendo drasticamente i tempi di elaborazione.</p>
+    </section>
+
+
+<!--7. Immagine a scelta-->
+<img src="">
+</main>
+
+
+<hr>
+
+<footer>
+    <p>Realizzato da Marco Funiati, 15/10/2026</p>
+</footer>
+
+</body>
+</html>

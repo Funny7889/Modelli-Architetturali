@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelli architeturali</title>
+</head>
+<body>
+
+    <!-- In testazione: uguale in tutte le pagine-->
+    <header>
+        <h1>Classificazione di Flynn</h1>
+        <p>Autore: Marco Funiati</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clusterGridComputing.html">Cluster e Grid Computing</a></li>
+            <li><a href="sistemiPervasivi.html">Sistemi Pervasivi</a></li>
+            <li><a href="architetturaSoftware.html">Architettura Software</a></li>
+            <li><a href="middleware.html">Middleware</a></li>
+        </ul>
+    </nav>
+
+
+<hr>
+
+
+<!-- contenuto da fare voi-->
+<main>
+
+  <!--2. Titolo argomento -->
+    <h2>Classificazione di Flynn</h2>
+
+    <!--3. Presentazione dell'argomento -->
+    <section>
+        <h3>Che cos'è</h3>
+        <p>La Classificazione di Flynn (proposta nel 1972) è uno schema per classificare le architetture dei calcolatori basato sul numero di flussi di istruzioni e di flussi di dati simultanei gestiti dal sistema.</p>
+    </section>
+
+    <!--4. Elenco delle caratteristiche principali -->
+    <section>
+        <h3>Caratteristiche principali</h3>
+        <ul>
+            <li>Si basa sulla combinazione di due elementi: Flusso di Istruzioni (Instruction Stream) e Flusso di Dati (Data Stream).</li>
+            <li>Definisce 4 categorie fondamentali: SISD, SIMD, MISD e MIMD.</li>
+            <li>I sistemi possono gestire flussi singoli (Single) o multipli (Multiple).</li>
+            <li>Le architetture MIMD si sottoclassificano ulteriormente in base al tipo di memoria: condivisa (multiprocessor) o privata (multicomputer).</li>
+        </ul>
+    </section>
+
+    <!--5. Tabella riassuntiva -->
+    <section>
+        <h3>Schema riepilogativo</h3>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Istruzioni</th>
+                    <th>Definizione</th>
+                    <th>Esempio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>SISD</strong></td>
+                    <td>Singolo / Singolo</td>
+                    <td>Macchina di Von Neumann con una sola CPU: esegue un programma alla volta, istruzione dopo istruzione, in modo sequenziale.</td>
+                    <td>PC, workstation, mainframe con singola CPU</td>
+                </tr>
+                <tr>
+                    <td><strong>SIMD</strong></td>
+                    <td>Singolo / Multiplo</td>
+                    <td>Un'unica unità di controllo impartisce la stessa istruzione a più processori, ciascuno su un flusso di dati diverso (parallelismo a livello di dati).</td>
+                    <td>Vector processor e array processor; calcolo vettoriale e matriciale, ambiente grafico</td>
+                </tr>
+                <tr>
+                    <td><strong>MISD</strong></td>
+                    <td>Multiplo / Singolo</td>
+                    <td>Più processori, ciascuno con la propria memoria e il proprio flusso di istruzioni, che operano sullo stesso flusso di dati.</td>
+                    <td>Nessuna macchina commerciale; il modello ricorda la pipeline; utile in ambito crittografico</td>
+                </tr>
+                <tr>
+                    <td><strong>MIMD</strong></td>
+                    <td>Multiplo / Multiplo</td>
+                    <td>Più unità centrali indipendenti, ciascuna con il proprio flusso di istruzioni e di dati. Si sottoclassifica in base alla memoria: condivisa (multiprocessor) o privata (multicomputer).</td>
+                    <td>Multiprocessor; multicomputer (anche una LAN di PC); cluster di PC</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<!--6. Esempio reale a scelta -->
+    <section>
+        <h3>Un esempio reale</h3>
+        <p>Un ottimo esempio reale di architettura <strong>SIMD</strong> è la scheda garfica (<strong>GPU</strong>). La GPU applica simultanea la stessa istruzione (es. calcoli matematici su pixel o vertici 3D) a una grande quantità di dati differenti, consentendo un'elevata parallelizzazione essenziali per l'elaborazione grafica e il calcolo scientifica.</p>
+    </section>
+
+
+<!--7. Immagine a scelta-->
+<img src="">
+</main>
+
+
+<hr>
+
+<footer>
+    <p>Realizzato da Marco Funiati, 15/10/2026</p>
+</footer>
+
+</body>
+</html>
