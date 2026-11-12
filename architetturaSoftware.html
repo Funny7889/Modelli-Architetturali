@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelli architeturali</title>
+    <title>Architetture distribuite software</title>
 </head>
 <body>
 
@@ -23,57 +23,230 @@
         </ul>
     </nav>
 
+    <hr>
 
-<hr>
+    <main>
+
+        <!-- 2. Titolo argomento -->
+        <h2>Architetture distribuite software</h2>
+
+        <!-- 3. Presentazione dell'argomento -->
+        <section>
+            <h3>Che cos'è</h3>
+
+            <p>
+                Le architetture distribuite software rappresentano l'evoluzione
+                dei sistemi informatici, attraverso diverse modalità di
+                organizzazione e collaborazione tra computer e componenti software.
+                Nel tempo si sono sviluppati diversi modelli architetturali,
+                dai terminali remoti fino alle moderne architetture a microservizi.
+            </p>
+        </section>
+
+        <!-- 4. Elenco delle caratteristiche principali -->
+        <section>
+            <h3>Caratteristiche principali</h3>
+
+            <ul>
+                <li>
+                    <strong>Terminali remoti:</strong>
+                    tutte le operazioni sono eseguite da un'unica entità centrale.
+                    I terminali non hanno capacità di elaborazione e si limitano
+                    a visualizzare e inviare o ricevere informazioni.
+                </li>
+
+                <li>
+                    <strong>Client-server:</strong>
+                    i client richiedono servizi a un server specializzato,
+                    che elabora le richieste e restituisce le risposte.
+                    Possono esserci più server e più client.
+                </li>
+
+                <li>
+                    <strong>Web-centric:</strong>
+                    il web server è il centro del sistema.
+                    Tutta la computazione avviene sui server, mentre i client
+                    servono principalmente come interfaccia grafica.
+                </li>
+
+                <li>
+                    <strong>Cooperativa:</strong>
+                    entità autonome esportano e richiedono servizi.
+                    Si basa sullo sviluppo a componenti e sulla programmazione
+                    a oggetti, con necessità di standardizzazione.
+                </li>
+
+                <li>
+                    <strong>Completamente distribuita:</strong>
+                    entità paritetiche cooperano tra loro, offrendo e richiedendo
+                    servizi. Possono essere presenti servizi e dati duplicati
+                    per garantire l'immunità ai guasti.
+                </li>
+
+                <li>
+                    <strong>A microservizi:</strong>
+                    l'applicazione viene suddivisa in componenti autonomi,
+                    ciascuno con una funzione specifica. I microservizi
+                    comunicano tramite API e ognuno possiede il proprio database.
+                </li>
+            </ul>
+        </section>
+
+        <!-- 5. Tabella riassuntiva -->
+        <section>
+            <h3>Schema riepilogativo</h3>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tappa</th>
+                        <th>Caratteristica principale</th>
+                        <th>Esempio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1. Terminali remoti</td>
+                        <td>
+                            Tutte le operazioni sono eseguite da un'unica
+                            entità centrale. I terminali sono omogenei e
+                            privi di capacità di elaborazione.
+                        </td>
+                        <td>
+                            Mainframe con terminali (sistemi bancari storici).
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>2. Client-server</td>
+                        <td>
+                            I client richiedono un servizio a un server
+                            che elabora e risponde. Client e server
+                            possono essere tecnologicamente diversi.
+                        </td>
+                        <td>
+                            Applicazione gestionale con database su server.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>3. Web-centric</td>
+                        <td>
+                            La computazione avviene sui server, che
+                            restituiscono il risultato ai client.
+                            Gli host funzionano quasi come terminali stupidi.
+                        </td>
+                        <td>
+                            Applicazioni gestionali convertite al Web e siti web.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>4. Cooperativa</td>
+                        <td>
+                            Entità autonome esportano e richiedono servizi.
+                            Si basa sullo sviluppo a componenti e sulla
+                            programmazione a oggetti.
+                        </td>
+                        <td>
+                            Componenti software che invocano servizi
+                            di altri componenti.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>5. Completamente distribuita</td>
+                        <td>
+                            Entità paritetiche offrono e richiedono servizi.
+                            Sono possibili duplicazioni per garantire
+                            l'immunità ai guasti.
+                        </td>
+                        <td>
+                            Sistemi groupware.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>6. A microservizi</td>
+                        <td>
+                            Applicazione suddivisa in componenti autonomi
+                            con funzioni specifiche, comunicazione tramite API
+                            e database indipendenti.
+                        </td>
+                        <td>
+                            App web di grandi dimensioni suddivisa
+                            in servizi indipendenti.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- 6. Esempio reale a scelta -->
+        <section>
+            <h3>Un esempio reale</h3>
+
+            <p>
+                Un esempio di architettura distribuita a microservizi è
+                un'applicazione web di grandi dimensioni suddivisa in
+                servizi indipendenti.
+            </p>
+
+            <p>
+                Ogni microservizio svolge una funzione specifica,
+                comunica con gli altri tramite API e possiede il proprio
+                database, strutturato secondo le proprie esigenze.
+                Questa organizzazione rende l'applicazione adatta
+                a sistemi complessi e scalabili.
+            </p>
+        </section>
 
 
-<!-- contenuto da fare voi-->
-<main>
+        <!-- Domande e risposte presenti nel PDF -->
+        <section>
+            <h3>Domande e risposte</h3>
 
-  <!--2. Titolo argomento -->
-    <h2>TITOLO ARGOMENTO SCELTO</h2>
+            <h4>Terminale remoto vs client?</h4>
+            <p>
+                Il terminale non ha capacità di elaborazione: mostra e invia
+                dati all'entità centrale. Il client ha capacità di elaborazione
+                e richiede servizi a un server specializzato.
+            </p>
 
-    <!--3. Presentazione dell'argomento -->
-    <section>
-        <h3>Che cos'è</h3>
-        <p>Scrivere una semplie descrizione</p>
-    </section>
+            <h4>Perché nel Web-centric si parla di terminali stupidi?</h4>
+            <p>
+                Perché con lo spostamento delle applicazioni sul server
+                la computazione avviene lì e i client servono quasi solo
+                come interfaccia grafica verso l'utente.
+            </p>
 
-    <!--4. Elenco delle caratteristiche principali -->
-    <section>
-        <h3>Caratteristiche principali</h3>
-        <ul>
-            <li>Prima caratteristica</li>
-            <li>Seconda caratteristica</li>
-            <li>...</li>
-        </ul>
-    </section>
+            <h4>Cos'è un microservizio e perché ha un proprio database?</h4>
+            <p>
+                È un componente autonomo con una funzione specifica,
+                che comunica con gli altri tramite API. Ogni servizio
+                ha il proprio database strutturato secondo le proprie esigenze,
+                invece di un unico grande database condiviso.
+            </p>
 
-<!--5. Tabella riassuntiva -->
-    <section>
-        <h3>Schema riepilogativo</h3>
-        <table>
-            <!-- inserire contenuto in righe e colonne -->
-        </table>
-    </section>
+            <h4>Quali sono i vantaggi dei microservizi?</h4>
+            <p>
+                Modularità, indipendenza dei servizi e gestione flessibile
+                dei carichi di lavoro. Per questo sono più adatti ad
+                applicazioni complesse e scalabili.
+            </p>
+        </section>
 
-<!--6. Esempio reale a scelta -->
-    <section>
-        <h3>Un esempio reale</h3>
-        <p>Descrivete l'esempio e perchè rientra in questo argomento</p>
-    </section>
+    </main>
 
+    <hr>
 
-<!--7. Immagine a scelta-->
-<img src="">
-</main>
-
-
-<hr>
-
-<footer>
-    <p>Realizzato da Marco Funiati, Giogio Sancesario, Marco Vincenti, 15/10/2026</p>
-</footer>
+    <footer>
+        <p>
+            Realizzato da Marco Funiati, Giogio Sancesario,
+            Marco Vincenti, 15/10/2026
+        </p>
+    </footer>
 
 </body>
 </html>
