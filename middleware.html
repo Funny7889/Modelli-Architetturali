@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelli architeturali</title>
+    <title>Middleware</title>
 </head>
 <body>
 
@@ -23,57 +24,125 @@
         </ul>
     </nav>
 
+    <hr>
 
-<hr>
+    <main>
 
+        <!--2. Titolo argomento -->
+        <h2>Middleware e architettura a livelli</h2>
 
-<!-- contenuto da fare voi-->
-<main>
+        <!--3. Presentazione dell'argomento -->
+        <section>
+            <h3>Che cos'è</h3>
+            <p>
+                Il middleware è una classe di tecnologie software sviluppate
+                per aiutare gli sviluppatori a gestire la complessità e
+                l'eterogeneità dei sistemi distribuiti. Ha lo scopo di
+                realizzare la comunicazione e le interazioni tra i diversi
+                componenti.
+            </p>
+        </section>
 
-  <!--2. Titolo argomento -->
-    <h2>TITOLO ARGOMENTO SCELTO</h2>
+        <!--4. Elenco delle caratteristiche principali -->
+        <section>
+            <h3>Caratteristiche principali</h3>
+            <ul>
+                <li>Si colloca tra il sistema operativo locale e le applicazioni.</li>
+                <li>Ha un'architettura a tre livelli: applicazione distribuita, middleware e SO + hardware.</li>
+                <li>Permette la comunicazione e la cooperazione tra servizi.</li>
+                <li>Utilizza chiamate a procedura remota (RPC) oppure scambio di messaggi.</li>
+                <li>Gestisce servizi, connessioni e cooperazione tramite meccanismi di programmazione e API.</li>
+                <li>È aperto e può essere diverso da host a host.</li>
+                <li>Non risolve tutti i problemi: non si occupa della comunicazione senza responsabilità su errori applicativi, guasti di rete e server.</li>
+            </ul>
+        </section>
 
-    <!--3. Presentazione dell'argomento -->
-    <section>
-        <h3>Che cos'è</h3>
-        <p>Scrivere una semplie descrizione</p>
-    </section>
+        <!--5. Tabella riassuntiva -->
+        <section>
+            <h3>Schema riepilogativo</h3>
 
-    <!--4. Elenco delle caratteristiche principali -->
-    <section>
-        <h3>Caratteristiche principali</h3>
-        <ul>
-            <li>Prima caratteristica</li>
-            <li>Seconda caratteristica</li>
-            <li>...</li>
-        </ul>
-    </section>
+            <table border="1">
+                <tr>
+                    <th>Caratteristica</th>
+                    <th>Multiproc.</th>
+                    <th>Multicomp.</th>
+                    <th>OS network</th>
+                    <th>Middleware</th>
+                </tr>
+                <tr>
+                    <td>Grado di trasparenza</td>
+                    <td>Molto alto</td>
+                    <td>Alto</td>
+                    <td>Basso</td>
+                    <td>Alto</td>
+                </tr>
+                <tr>
+                    <td>Unico SO su tutti i nodi</td>
+                    <td>Sì</td>
+                    <td>Sì</td>
+                    <td>NO</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td>N. di copie del SO</td>
+                    <td>1</td>
+                    <td>N</td>
+                    <td>N</td>
+                    <td>N</td>
+                </tr>
+                <tr>
+                    <td>Forma di comunicazione</td>
+                    <td>Memoria condivisa</td>
+                    <td>Messaggi / memoria condivisa</td>
+                    <td>Files</td>
+                    <td>Modelli specifici</td>
+                </tr>
+                <tr>
+                    <td>Gestione delle risorse</td>
+                    <td>Globale centralizzata</td>
+                    <td>Globale distribuita</td>
+                    <td>Per nodo</td>
+                    <td>Per nodo</td>
+                </tr>
+                <tr>
+                    <td>Scalabilità</td>
+                    <td>NO</td>
+                    <td>Modesta</td>
+                    <td>Sì</td>
+                    <td>Variabile</td>
+                </tr>
+                <tr>
+                    <td>Apertura ai diversi SO</td>
+                    <td>CHIUSO</td>
+                    <td>CHIUSO</td>
+                    <td>APERTO</td>
+                    <td>APERTO</td>
+                </tr>
+            </table>
+        </section>
 
-<!--5. Tabella riassuntiva -->
-    <section>
-        <h3>Schema riepilogativo</h3>
-        <table>
-            <!-- inserire contenuto in righe e colonne -->
-        </table>
-    </section>
+        <!--6. Esempio reale a scelta -->
+        <section>
+            <h3>Un esempio reale</h3>
+            <p>
+                Un esempio è la chiamata locale e remota (RPC).
+                Nella chiamata locale, la procedura gira sullo stesso
+                computer. Nella RPC, il middleware invia la richiesta
+                a un altro computer e riporta il risultato, facendo
+                apparire la chiamata come locale.
+            </p>
+        </section>
 
-<!--6. Esempio reale a scelta -->
-    <section>
-        <h3>Un esempio reale</h3>
-        <p>Descrivete l'esempio e perchè rientra in questo argomento</p>
-    </section>
+        <!--7. Immagine a scelta-->
+        <img src="">
 
+    </main>
 
-<!--7. Immagine a scelta-->
-<img src="">
-</main>
+    <hr>
 
-
-<hr>
-
-<footer>
-    <p>Realizzato da Marco Funiati, 15/10/2026</p>
-</footer>
+    <footer>
+        <p>Realizzato da Marco Funiati, Giogio Sancesario, Marco Vincenti, 15/10/2026</p>
+    </footer>
 
 </body>
 </html>
