@@ -31,36 +31,80 @@
 <main>
 
   <!--2. Titolo argomento -->
-    <h2>TITOLO ARGOMENTO SCELTO</h2>
+    <h2>Architetture distribuite software</h2>
 
     <!--3. Presentazione dell'argomento -->
     <section>
         <h3>Che cos'è</h3>
-        <p>Scrivere una semplie descrizione</p>
+        <p>Le architetture distribuite software rappresentano l'evoluzione cronologica dei modelli con cui le applicazioni vengono strutturate e distribuite tra più nodi di elaborazione, passando da sistemi centralizzati fino a componenti autonomi e scalabili.</p>
     </section>
 
     <!--4. Elenco delle caratteristiche principali -->
     <section>
         <h3>Caratteristiche principali</h3>
         <ul>
-            <li>Prima caratteristica</li>
-            <li>Seconda caratteristica</li>
-            <li>...</li>
+            <li><strong>Evoluzione storica:</strong> Il software ha seguito un percorso evolutivo che spesso ha anticipato i cambiamenti dell'hardware e dei sistemi operativi.</li>
+            <li><strong>Dal centralizzato al distribuito:</strong> Si è passati da terminali privi di capacità di elaborazione (controllati da un mainframe) a client inteliggenti che dialogano con server specializzati.</li>
+            <li><strong>Standardizzazione e cooperazione:</strong> Nei modelli evolutivi le entità autonome cooperano invocando servizi reciproci tramite standard come CORBA, RMI e DCOM</li>
+            <li><strong>Modularità moderna:</strong> Le architetture a microservizi suddividono l'applicazione in componenti indipendenti, ciascuno dotato di un proprio database e comunicante tramite API.</li>
         </ul>
     </section>
 
 <!--5. Tabella riassuntiva -->
     <section>
         <h3>Schema riepilogativo</h3>
-        <table>
-            <!-- inserire contenuto in righe e colonne -->
+        <table border="1">
+            <!--5. Tabella riassuntiva -->
+        <section>
+            <h3>Schema riepilogativo</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Tappa</th>
+                        <th>Caratteristica principale</th>
+                        <th>Esempio</th>
+                    </tr>                 
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong>1. Terminali remoti</strong></td>
+                    <td>Tutte le operazioni sono eseguite da un'unica entità centrale; i terminali, omogenei e privi di capacità di elaborazione, visualizzano e inviano/ricevono informazioni. Software di gestione semplice: un'area di memoria riservata per ciascun terminale.</td>
+                    <td>Mainframe con terminali (sistemi bancari storici)</td>
+                </tr>
+                <tr>
+                    <td><strong>2. Client-server</strong></td>
+                    <td>Singolo / Multiplo</td>
+                    <td>Un'unica unità di controllo impartisce la stessa istruzione a più processori, ciascuno su un flusso di dati diverso (parallelismo a livello di dati).</td>
+                    <td>Vector processor e array processor; calcolo vettoriale e matriciale, ambiente grafico</td>
+                </tr>
+                <tr>
+                    <td><strong>3. Web-centric</strong></td>
+                    <td>Il web server è il centro del sistema: tutta la computazione avviene sui server, che restituiscono il risultato ai client; gli host fanno quasi da “terminali stupidi” per l'interfaccia grafica. Si distinguono architetture web tradizionali e multilivello.</td>
+                    <td>Applicazioni gestionali “convertite al Web”, siti web</td>
+                </tr>
+                <tr>
+                    <td><strong>4. Cooperativa</strong></td>
+                    <td>Evoluzione del client-server: entità autonome che esportano e richiedono servizi, secondo lo sviluppo a componenti e la programmazione a oggetti (incapsulamento). Richiede standardizzazione: OdP, CORBA.</td>
+                    <td>Componenti software che invocano servizi di altri componenti</td>
+                </tr>
+                <tr>
+                    <td><strong>5. Completamente distribuita</strong></td>
+                    <td>Cooperazione di entità paritetiche (es. groupware), ciascuna offre e richiede servizi, spesso duplicati per garantire l'immunità ai guasti (ridondanza anche nei dati). Tecnologie: OMG, RMI, DCOM.</td>
+                    <td>Sistemi groupware</td>
+                </tr>
+                <tr>
+                    <td><strong>6. A microservizi</strong></td>
+                    <td>Applicazione suddivisa in componenti autonomi (microservizi), ciascuno con una funzione specifica, che comunicano tramite API; ogni servizio ha il proprio database. Adatta ad applicazioni complesse e scalabili.</td>
+                    <td>App web di grandi dimensioni suddivisa in servizi indipendenti</td>
+                </tr>
+            </tbody>
         </table>
     </section>
 
 <!--6. Esempio reale a scelta -->
     <section>
         <h3>Un esempio reale</h3>
-        <p>Descrivete l'esempio e perchè rientra in questo argomento</p>
+        <p>Un ottimo esempio reale è un'<strong>applicazione web di grandi dimensioni</strong> (come una piattaforma di e-commerce o di streaming) realizzata con un'<strong>architettura a microservizi</strong>. L'applicazione è suddivisa in servizi indipendenti (gestione utenti, catalogo prodotti, pagamenti), ciascuno dotato del prorpio database dedicato e in grado di comunicare con gli altri tramite API, garantendo così elevata modularità e scalabilità.</p>
     </section>
 
 
